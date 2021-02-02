@@ -3,24 +3,42 @@
 <head>
   <meta charset="utf-8">
   <title>web-CSS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZXBP4F0PS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KZXBP4F0PS');
+  </script>
+  <link rel="stylesheet" href="style.CSS">
+  <script src="colors.js"></script>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="web-html(1).html">html</a></li>
-    <li><a href="web-css(1).html">css</a></li>
-    <li><a href="web-javascript(1).html">javascript</a></li>
-  </ol>
-  <h2>CSS</h2>
-<p><a href="https://www.w3.org/TR/html52/" target="_blank" title="htiml specification">Hypertext Markup Language(HTML)</a></p>
-<strong>종속형 시트</strong> 또는 <strong>캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)</strong>는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
-<br><br><br>
-<img src="코딩이미지.jpg" width=500>
-
+  <input id="Night_Day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <div id=grid>
+    <ol>
+      <li><a href="web-html(1).html" class="saw">html</a></li>
+      <li><a href="web-css(1).html" class="saw active" id="active">css</a></li>
+      <li><a href="web-javascript(1).html" class="saw active">javascript</a></li>
+    </ol>
+      <div id="article">
+        <h2>CSS</h2>
+        <p><a href="https://www.w3.org/TR/html52/" target="_blank" title="htiml specification">Hypertext Markup Language(HTML)</a></p>
+        <strong>종속형 시트</strong> 또는 <strong>캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)</strong>는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+        <br><br><br>
+        <img src="코딩이미지.jpg" width=500>
+      </div>
+  </div>
 <p>
   <div id="disqus_thread"></div>
-<script>
+  <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
@@ -36,9 +54,26 @@
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
+
+  <p>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/60041bd0a9a34e36b96d495e/1es80p9mt';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </p>
+
 </body>
 
 </html>
